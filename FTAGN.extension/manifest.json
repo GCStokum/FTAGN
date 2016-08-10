@@ -1,0 +1,36 @@
+//manifest.json
+
+{
+    // Required
+    "manifest_version" : 2,
+
+    "name" : "FTAGN Chrome Extension",
+
+    "version" : "0.1",
+
+    // Recommended
+    //"default_locale" : "en",
+
+    "description" : "Ia! Ia! Cthulhu fhtagn!",
+
+    "icons" : { "16" : "image/icon16.png",
+                // "19" : "image/icon19.png",
+                // "38" : "image/icon38.png",
+                "48" : "image/icon48.png",
+                "64" : "image/icon64.png",
+                "128" : "image/icon128.png"},
+
+    // using a browser_action instead of a page_action
+    "browser_action" : {
+        "default_title" : "Ftagn Content",
+        "default_icon" : "image/icon64.png",
+        "default_popup" : "code/popup.html"
+        },
+
+    "author" : "G. Carter Stokum",
+
+    "permissions" : [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+        ]
+}
