@@ -11,22 +11,13 @@
 </head>
 
 <body style="background-color:darkgrey">
-<<<<<<< HEAD
 f'TAG'n!<br>
+<?php $name = $_REQUEST['name']; ?>
 	<form action="insert.php" method="post">
-		<chrome.tabs.query({active: true, currentWindow: true}, function(arrayOfTabs)
-		{	
-			var activeTab = arrayOfTabs[0];
-			var activeTabId = activeTab.id;
-		});>
-				
-		Auto URL: <input type="text" name="AURL" value="url here" /><br>		
-		URL: <input type="text" name="URL" /><br>
-		Tag: <input type="text" name="1stTag" /><br>
+		Auto URL: <input type="text" id="formAURL" name="AURL" value=<?php echo htmlspecialchars($name); ?> /><br>		
+		URL: <input type="text" id="formURL" name="URL" /><br>
+		Tag: <input type="text" id="formTAG" name="1stTag" /><br>
 		<input type="submit" />
 	</form>
-=======
-Ia! Ia!
->>>>>>> origin/master
 </body>
 </html>
